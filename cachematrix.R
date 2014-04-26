@@ -1,4 +1,7 @@
-## The makeCacheMatrix object creator that contains accessors
+
+
+## makeCacheMatrix function
+## The CacheMatrix object creator, makeCacheMatrix, that contains accessors
 ## for the original matrix x (get) and to get and set it's 
 ## inverse (setmatrixinverse, getmatrixinverse).  
 ## getmatrixinverse returns NULL if it has
@@ -20,7 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## If the makeCacheMatrix object has a computed inverse 
+## cacheSolve function
+## If the CacheMatrix object has a computed inverse 
 ## return it from the cache.  Else compute it, save it
 ## in the cache and return it
 ## it 
